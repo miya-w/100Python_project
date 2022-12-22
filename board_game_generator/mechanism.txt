@@ -1,0 +1,76 @@
+Abstract Strategy, Action, Adventure, Age of Reason	啟蒙運動時期, American Civil War美國內戰, American Indian Wars	美國印地安戰爭, 
+American West	美國西部
+Ancient	遠古時期
+Animals	動物
+Arabian	阿拉伯
+Aviation/Flight	航空飛行
+Bluffing	嚇唬欺騙
+Book	紙本
+Card Game	卡牌
+Children's Game	兒童
+City Building	都市建設
+Civil War	內戰
+Civilization	文明
+Collectible Components	集換
+Comic Book/Strip	漫畫題材
+Deduction	推理
+Dice	骰子
+Economic	經濟
+Educational	教育
+Electronic	電子
+Environmental	環境
+Expansion for Base-game	擴展包
+Exploration	探險
+Fantasy	奇幻
+Farming	農業
+Fighting	戰鬥
+Game System	遊戲系統
+Horror	驚悚
+Humor	幽默
+Industry/Manufacturing	工業
+Mafia	黑手黨
+Math	數學
+Mature/Adult	成人
+Maze	迷宮
+Medical	醫療
+Medieval	中古時期
+Memory	記憶
+Miniatures	微縮模型
+Modern Warfare	現代戰爭
+Movies/TV/Radio theme	影視
+Murder/Mystery	謀殺
+Music	音樂
+Mythology	神話
+Napoleonic	拿破崙
+Nautical	航海
+Negotiation	談判
+Novel-based	小說題材
+Number	數字
+Party Game	派對
+Pike and Shot	阻絕與投射
+Pirates	海盜
+Political政治
+Post-Napoleonic	後拿破崙
+Prehistoric	史前時期
+Print & Play 可列印遊戲
+Puzzle	猜謎
+Racing競賽
+Real-time	時間限制
+Religious	宗教
+Renaissance	文藝復興時期
+Science Fiction	科幻
+Space Exploration太空探險
+Spies/Secret Agents	間諜
+Sports運動
+Territory Building領土建設
+Trains火車
+Transportation	運輸
+Travel	旅行
+Trivia	瑣碎問答
+Video Game Theme	電玩題材
+Vietnam War	越戰
+Wargame	戰爭
+Word Game	單字
+World War I	一次大戰
+World War II	二次大戰
+Zombies	殭屍
