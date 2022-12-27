@@ -85,9 +85,38 @@ while i < 5:
 for i in range(1, 5):
  print(i)
 ```
+## store collections of data
 
-### Dictionaries
-We use dictionaries to store key/value pairs.
+4 built-in data types in Python used to store collections of data
+- List
+- Set
+- Dictionary
+- Tuple
+
+
+## List 
+- Lists are used to store multiple items in a single variable.
+- List itemsare ordered, changeable, and allow duplicate values. 
+```python
+mylist = ["apple", "banana", "cherry"]
+ print(thislist) #output: ['apple', 'banana', 'cherry']
+
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+ print(x)  #output: apple banana cherry
+
+```
+## Set
+- Sets are used to store multiple items in a single variable.
+- A set is a collection which is unordered, unchangeable*, and unindexed.
+```python
+thisset = {"apple", "banana", "cherry"}
+print(thisset) ##output {'cherry', 'banana', 'apple'}
+```
+
+## Dictionaries
+- We use dictionaries to store key/value pairs.
+- A dictionary is a collection which is ordered*, changeable    and do not allow duplicates.
 ```python
 customer = {
  “name”: “John Smith”,
@@ -101,6 +130,23 @@ customer[“name”] # returns “John Smith”
 customer[“type”] # throws an error
 customer.get(“type”, “silver”) # returns “silver”
 customer[“name”] = “new name”
+```
+## forloop in dictionary
+```python
+student_scores = {
+  "Harry": 67,
+  "Mary": 82,
+  "Mia" : 90,
+  "Hamilton":88,
+  "David":91,
+}
+
+#for student in student_scores:
+  # print(student_scores[student]) #output: 67 82 90 88 91
+  # print(student) #output: Harry Mary Mia Hamilton David
+  # print(student_scores["Mia"]) #output : 90
+```
+
 ``` 
 ## Random
 
