@@ -1,10 +1,10 @@
 # 100 Python projects
 
 This 100PythonProjects records the journey learning python from Zero!
+- [](https://github.com/miya-w/100Python_project/blob/main/Python_cheat_sheet/README.md)
 
 
-
-
+---
 ### Pythpon learing resources(visalze the process)
 - [Python tutor](https://pythontutor.com/)
 - [thonny](https://thonny.org/)

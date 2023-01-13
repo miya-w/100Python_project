@@ -145,8 +145,6 @@ student_scores = {
   # print(student_scores[student]) #output: 67 82 90 88 91
   # print(student) #output: Harry Mary Mia Hamilton David
   # print(student_scores["Mia"]) #output : 90
-```
-
 ``` 
 ## Random
 
@@ -202,9 +200,11 @@ greet_with_name("Jack Bauer")
 [StackOverFlow - What is print(f"...")](https://stackoverflow.com/questions/57150426/what-is-printf)
 
 ## OOP
+- **Object-oriented programming (OOP)** is a method of structuring a program by bundling related properties and behaviors into individual objects.
 
-car
+
 ```python
+class Car:
 # attributes:
 speed = 20
 fuel = 30
@@ -216,3 +216,20 @@ speed = 0
 #calling the method
 car.stop()
 ```
+
+
+## Build your own class
+- attribute
+- method
+
+pass 
+if we actually really want to leave this function or this class empty, we can use a keyword which is pass.And all it does is it just passes. It says, I don't want to have a go right now.
+Just continue to the next line of code. And this gets rid of our errors
+def function()
+     pass
+
+### _init_
+
+init function
+inside this init function is where we initialize or create the starting
+values for our attributes
