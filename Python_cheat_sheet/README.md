@@ -94,9 +94,9 @@ for i in range(1, 5):
 - Tuple
 
 
-## List 
+## List [ ]
 - Lists are used to store multiple items in a single variable.
-- List itemsare ordered, changeable, and allow duplicate values. 
+- List itemsare **ordered, changeable, and allow duplicate values**. 
 ```python
 mylist = ["apple", "banana", "cherry"]
  print(thislist) #output: ['apple', 'banana', 'cherry']
@@ -106,31 +106,75 @@ for x in thislist:
  print(x)  #output: apple banana cherry
 
 ```
-## Set
+## Set{ }
 - Sets are used to store multiple items in a single variable.
-- A set is a collection which is unordered, unchangeable*, and unindexed.
+- A set is a collection which is **unordered, unchangeable*, and unindexed**.
 ```python
 thisset = {"apple", "banana", "cherry"}
 print(thisset) ##output {'cherry', 'banana', 'apple'}
 ```
 
-## Dictionaries
+## Dictionaries { }
 - We use dictionaries to store key/value pairs.
-- A dictionary is a collection which is ordered*, changeable    and do not allow duplicates.
+- A dictionary is a collection which is **ordered, changeable and do not allow duplicates**.
 ```python
-customer = {
- “name”: “John Smith”,
- “age”: 30,
- “is_verified”: True
-}
-
-# We can use strings or numbers to define keys. They should be unique. We can use
-#any types for the values.
-customer[“name”] # returns “John Smith”
-customer[“type”] # throws an error
-customer.get(“type”, “silver”) # returns “silver”
-customer[“name”] = “new name”
+#Dictionaries are used to store data values 
+# in key:value pairs.
+# {
+#     key1 : value1,
+#     key2 : value2,
+#     key3 : value3
+# }
 ```
+### Example
+```pthon
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 2020
+}
+print(thisdict)
+#output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+print(thisdict["brand"])
+#output: Ford
+print(thisdict["model"])
+#output:Mustang
+
+```
+
+### - Access the dictionary
+1.  get()
+2. The **keys() method** will return a list of all the keys in the dictionary.
+ ```python
+ print(thisdict.keys())
+    #output: dict_keys(['brand', 'model', 'year'])
+```
+### Add the item
+```python
+thisdict["color"] = "white"
+print(thisdict)
+#output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020, 'color': 'white'}
+```
+### Update the item
+- The update() method will update the dictionary with the items from the given argument.
+1. ->thisdict.update({"year": 2020})
+2. ->
+```python
+thisdict["year"] = 2018
+print(thisdict)
+#output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2018, 'color': 'white'}
+```
+
+### Removing Items
+- The pop() method removes the item with the specified key name
+```python
+thisdict.pop("model")
+print(thisdict)
+#The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+thisdict.popitem()
+print(thisdict)
+```
+
 ## forloop in dictionary
 ```python
 student_scores = {
@@ -201,35 +245,90 @@ greet_with_name("Jack Bauer")
 
 ## OOP
 - **Object-oriented programming (OOP)** is a method of structuring a program by bundling related properties and behaviors into individual objects.
-
-
-```python
-class Car:
-# attributes:
-speed = 20
-fuel = 30
-# method
-def move():
-    speed = 60
-def stop()
-speed = 0
-#calling the method
-car.stop()
-```
-
-
 ## Build your own class
 - attribute
 - method
+The attributes are the things that the object **has**.
+The methods are the things that the object **does**.
 
-pass 
-if we actually really want to leave this function or this class empty, we can use a keyword which is pass.And all it does is it just passes. It says, I don't want to have a go right now.
-Just continue to the next line of code. And this gets rid of our errors
+```python
 def function()
      pass
+```
+## __init__
 
-### _init_
+### Init function
+- Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created:
 
-init function
-inside this init function is where we initialize or create the starting
-values for our attributes
+when our object is being constructed.And this is also known in programming as initializing an object. When the object is being initialized,we can set variables or counters to they're starting values.
+
+### The self Parameter
+The self **parameter** is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class:
+### pass 
+if we actually really want to leave this function or this class empty, we can use a keyword which is pass.And all it does is it just passes. It says, I don't want to have a go right now. Just continue to the next line of code. And this gets rid of our errors
+
+### Object Methods
+- excute 
+```python
+user_1.follow(user_2)
+```
+### Example.
+```python
+#--- no_init_function---
+class User:
+    pass
+
+user_1 = User()
+user_1.id ="001"
+user_1.username = "Mia"
+
+user_2 = User()
+user_2.id ="002"
+user_2.username = "John"
+```
+### example using __init__
+```python
+#---Using __init__---
+class User:
+    def __init__(self,id,username):
+        self.id = id
+        self.username = username
+        self.fallower = 0
+        self.following = 0
+
+    def follow(self, user):
+        user.follower += 1
+        self.following += 1
+        
+user_1 = User("001","Mia")
+user_2 = User("002","John")
+user_3 = User("003","Harry")
+        
+#call methodpo
+user_1.follow(user_2)
+
+#---OutPut---      
+print(User) 
+    # output: <class '__main__.User'>
+print(user_1)
+    #output: <__main__.User object at 0x107adc910>
+print(user_1.id)
+    #output: 001
+print(user_2.username)
+    #output: John
+print(user_1.follower)
+    #output: 0
+print(user_1.following)
+    #output: 1
+print(user_2.follower)
+    output: 1
+
+```
+
+---
+Resources
+- [medium - What is a Python Class and How Do You Use It?](https://towardsdatascience.com/enhance-your-python-project-code-with-classes-5a19d0e9f841)
+- [Python Document - 9.Class](https://docs.python.org/3/tutorial/classes.html)
+-[geeksforgeeks - python object ](https://www.geeksforgeeks.org/python-object/)

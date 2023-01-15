@@ -22,17 +22,20 @@ user_2 = User("002","John")
 user_1.follow(user_2)
         
 print(User) 
-# output: <class '__main__.User'>
+    # output: <class '__main__.User'>
 print(user_1)
-#output: <__main__.User object at 0x107adc910>
+    #output: <__main__.User object at 0x107adc910>
 print(user_1.id)
-#output: 001
+    #output: 001
 print(user_2.username)
-#output: John
+    #output: John
+
+print(User.follow)
+    #<function User.follow at 0x1071b8ae0>
 
 print(user_1.follower)
-#output: 0
+    #output: 0
 print(user_1.following)
-#output: 1
+    #output: 1
 print(user_2.follower)
-#output: 1
+    #output: 1

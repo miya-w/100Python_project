@@ -6,25 +6,55 @@
 #     key3 : value3
 # }
 
-# thisdict = {
-#   "brand": "Ford",
-#   "model": "Mustang",
-#   "year": 1964,
-#   "year": 2020
-# }
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 2020
+}
 
-# print(thisdict)
-# print out // {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
-# print(thisdict["brand"])
-# print out // Ford
+print(thisdict)
+#output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+print(thisdict["brand"])
+#output: Ford
+print(thisdict["model"])
+#output:Mustang
 
+# - Access the dictionary
+# get()
+# The **keys() method** will return a list of all the keys in the dictionary.
+print(thisdict.keys())
+#output: dict_keys(['brand', 'model', 'year'])
+
+## Add the item
+thisdict["color"] = "white"
+print(thisdict)
+#output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020, 'color': 'white'}
+
+### Update the item
+#The update() method will update the dictionary with the items from the given argument.
+# 1 ->thisdict.update({"year": 2020})
+# 2->
+thisdict["year"] = 2018
+print(thisdict)
+#output: 
+ 
+ ### Removing Items
+# The pop() method removes the item with the specified key name
+thisdict.pop("model")
+print(thisdict)
+#The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+thisdict.popitem()
+print(thisdict)
+
+#The del keyword removes the item with the specified key name:
+#del thisdict["model"]
 
 ##Python Dictionaries
 
-programming_dictionary = {
-  "Bug": "An error in a program that prevents the program from running as expected.", 
-  "Function": "A piece of code that you can easily call over and over again.",
-}
+# programming_dictionary = {
+#   "Bug": "An error in a program that prevents the program from running as expected.", 
+#   "Function": "A piece of code that you can easily call over and over again.",
+# }
 
 #Retrieving items from dictionary.
 
@@ -50,34 +80,34 @@ programming_dictionary = {
 #   print(programming_dictionary[key])
 
 #######################################
-student_scores = {
-  "Harry": 67,
-  "Mary": 82,
-  "Mia" : 90,
-  "Hamilton":88,
-  "David":91,
-}
+# student_scores = {
+#   "Harry": 67,
+#   "Mary": 82,
+#   "Mia" : 90,
+#   "Hamilton":88,
+#   "David":91,
+# }
 
 #for student in student_scores:
   # print(student_scores[student]) #output: 67 82 90 88 91
   # print(student) #output: Harry Mary Mia Hamilton David
   # print(student_scores["Mia"]) #output : 90
 
-# 1. Create an empty dictionary student_grades.
-student_grades = {}
+# # 1. Create an empty dictionary student_grades.
+# student_grades = {}
 
-# 2. Write your code below to add the grades to student_grades.
-for student in student_scores:
- score = student_scores[student]
- if score > 90:
-   student_grades[student] = "Outstanding"
- elif score > 80:
-   student_grades[student] = "Execellent"
- elif score > 70:
-   student_grades[student] = "acceptable"
- else: 
-   student_grades[student] = "fail"
-print(student_grades)
+# # 2. Write your code below to add the grades to student_grades.
+# for student in student_scores:
+#  score = student_scores[student]
+#  if score > 90:
+#    student_grades[student] = "Outstanding"
+#  elif score > 80:
+#    student_grades[student] = "Execellent"
+#  elif score > 70:
+#    student_grades[student] = "acceptable"
+#  else: 
+#    student_grades[student] = "fail"
+# print(student_grades)
   
    
 
